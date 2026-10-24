@@ -1,4 +1,4 @@
-# Auditoría de sistemas del negocio familiar
+# Auditoría de sistemas 
 
 **Auditor:** Luis Fernando Restrepo Holguin
 
