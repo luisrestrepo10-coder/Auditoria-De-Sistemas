@@ -1,12 +1,7 @@
 # Taller: del riesgo priorizado al plan de auditoría
 
 **Asignatura:** Auditoría de Sistemas (ET0114)  
-**Docente:** Juan Duque  
-**Equipo:** integrantes reservados en esta versión por confidencialidad  
-**Caso:** Negocio familiar de comercialización de productos cárnicos  
-**Sistema:** nombre reservado o no disponible  
-**Fecha de exposición:** 30 de octubre de 2026  
-**Fecha de entrega:** 1 de noviembre de 2026  
+**Auditor:** Luis Fernando Restrepo Holguin  
 
 > **Nota sobre confidencialidad:** Este documento es una propuesta académica de auditoría. No incluye nombres, direcciones ni registros reales de clientes. La evidencia descrita es la que se solicitaría en una auditoría autorizada; no ha sido obtenida ni examinada para este taller.
 
@@ -31,40 +26,53 @@ Se prioriza este riesgo porque la información respalda operaciones comerciales 
 
 ## 2. Objetivo de auditoría
 
-**Determinar si el respaldo reportado del 26 de junio de 2026 puede localizarse y recuperarse, y evaluar su cobertura respecto de la información registrada en el sistema hasta el 30 de junio de 2026.**
+**Evaluar si el proceso de respaldo de la información del sistema está definido y opera de manera confiable para proteger y recuperar íntegramente los datos necesarios para las operaciones del negocio, considerando el volumen y crecimiento de la información, la frecuencia de las copias, su almacenamiento y conservación, el control de acceso y las pruebas de restauración; identificar brechas en los respaldos disponibles y posibles pérdidas de información.**
 
 El objetivo plantea una condición que podría evaluarse con evidencia en una auditoría autorizada. No afirma que el respaldo exista, que esté completo o que pueda recuperarse.
 
 ## 3. Alcance funcional
 
-- **Proceso:** creación, conservación y recuperación de respaldos de la información del sistema.
-- **Sistema o componente:** sistema de información de ventas utilizado por el negocio y el medio donde se habría guardado el respaldo del 26 de junio. El nombre del sistema y el medio de almacenamiento están por confirmar.
-- **Información incluida:** registros de pedidos asociados a clientes, direcciones y valores. En las evidencias de trabajo se usarían identificadores anonimizados o datos enmascarados, según lo que autorice la organización.
-- **Población:** respaldos o exportaciones que existan para el sistema durante su periodo de uso y registros que cubran del 12 de mayo al 30 de junio de 2026. El número real de elementos se determinaría al obtener un inventario autorizado.
-- **Periodo:** del 12 de mayo al 30 de junio de 2026. Se revisaría específicamente el respaldo reportado del 26 de junio y la cobertura de los registros hasta el último día de uso.
-- **Responsables o fuentes de información:** el jefe o propietario del negocio, la persona que actualmente custodie el sistema o sus archivos y, si estuviera disponible y autorizado, la antigua encargada del registro.
-- **Incluye:** ubicación y características técnicas del respaldo; cobertura temporal; controles para su conservación; y una prueba de recuperación en un entorno controlado, si la organización la autorizara.
-- **Excluye:** evaluación general de todos los controles del sistema, auditoría del transporte y análisis de los registros manuales o financieros. El alcance se limita al respaldo y recuperación de los datos del sistema.
-- **Limitación del ejercicio:** el equipo no tiene autorización para revisar datos identificables de clientes ni para examinar el respaldo real. Por ello, este documento define procedimientos y evidencias esperadas, pero no presenta resultados de auditoría.
+- **Proceso:** gestión de respaldos de principio a fin: definición de necesidades, creación, frecuencia, cobertura, capacidad y ubicación del almacenamiento, conservación, control de acceso y recuperación de la información.
+
+- **Sistema o componentes:** sistema de información de ventas, computador donde se encuentra instalado y medio o servicio utilizado para guardar las copias. El nombre del sistema y el medio de almacenamiento están por confirmar.
+
+- **Información incluida:** registros de clientes y pedidos que el sistema maneja, como nombre, dirección, pedido y valor. En una auditoría real, se protegerían los datos personales; en el trabajo académico no se incluirán datos identificables.
+
+- **Población:** respaldos, exportaciones, configuraciones y registros de ejecución relacionados con el sistema, además de los datos necesarios para evaluar la cobertura y el volumen de información. La cantidad de elementos se establecería al conocer el inventario disponible.
+
+- **Periodo:** etapa de uso del sistema, del 12 de mayo al 30 de junio de 2026. Dentro de ese periodo se revisaría el respaldo reportado del 26 de junio y se evaluaría si la información del sistema hasta el último día de uso quedó cubierta. Este intervalo delimita el caso; el objetivo evalúa el proceso de respaldos en general.
+
+- **Responsables o fuentes de información:** jefe o propietario del negocio, custodio actual del sistema o de los archivos y responsable de administrar el sistema. La antigua encargada podría ser una fuente si estuviera disponible y la empresa autorizara consultarla. Los nombres no se incluirán.
+
+- **Incluye:** revisión de cómo se definen la frecuencia y la cobertura de los respaldos; capacidad y ubicación de almacenamiento; conservación y acceso a las copias; evidencia de su ejecución; características del último respaldo reportado; y una prueba controlada de recuperación, si se autorizara en una auditoría real.
+
+- **Excluye:** auditoría general de todos los controles tecnológicos, evaluación del transporte, revisión de la exactitud financiera de ventas y deudas, y análisis independiente de los registros manuales. Estos temas no forman parte del proceso de respaldo seleccionado.
+
+- **Limitación del ejercicio:** por confidencialidad, el equipo no puede consultar datos identificables ni examinar el respaldo real. El trabajo presentará los procedimientos y la evidencia que se solicitarían en una auditoría formal autorizada; no afirmará que el proceso fue probado ni que se encontraron pérdidas.
 
 ## 4. Criterios de evaluación
 
 | Criterio | Fuente y aplicación |
 |---|---|
-| Las copias de respaldo se conservan y se prueban periódicamente conforme a una política acordada para respaldos. | Se propone como referencia el control 8.13 de ISO/IEC 27002:2022, relativo a respaldos de información, software y sistemas. Se aplica como criterio de diseño del plan, no como prueba de que la empresa haya adoptado la norma. [Referencia oficial de ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) |
-| El respaldo debe corresponder a la información que la organización considera necesaria conservar y permitir su recuperación de acuerdo con el proceso definido. | Condición propuesta por el equipo para evaluar la cobertura y recuperabilidad. Debe contrastarse con las necesidades del negocio y confirmarse con el responsable durante una auditoría real. |
-| La organización define cómo realizar, conservar y probar sus respaldos. | Se solicitaría el procedimiento vigente. Según la información disponible para el caso, no existe un procedimiento escrito; esto debe corroborarse con el responsable. Mientras no se confirme una política interna, la referencia ISO se utilizaría como guía de evaluación y no como obligación interna ya adoptada. |
+| El proceso de respaldo debe estar definido e indicar responsables, información que se copia, frecuencia, ubicación, conservación y acceso a las copias. | Se solicitará la política o procedimiento vigente. Según la información disponible para el caso, no existe un procedimiento escrito; este dato está pendiente de corroboración. Si no hay una política formal, estos aspectos se usarán como criterios propuestos por el equipo y deberán confirmarse con el responsable del negocio. |
+| Los respaldos deben cubrir la información que el negocio necesita conservar y contar con capacidad suficiente para el volumen actual y el crecimiento previsto de los datos. | Criterio propuesto por el equipo. Se contrastaría con las necesidades de conservación, el volumen de información y la capacidad de almacenamiento que el negocio defina. No se supondrán cantidades ni periodos de retención. |
+| Las copias deben conservarse de forma que puedan localizarse y utilizarse cuando se necesiten, con acceso limitado a personas autorizadas. | Criterio propuesto por el equipo, sujeto a confirmar con el responsable y a contrastar con las políticas internas que existan. Se revisarían la ubicación de las copias, quién puede acceder a ellas y cómo se protegen. |
+| La recuperación de los respaldos debe probarse periódicamente conforme a una política acordada, y los resultados deben permitir identificar si la información puede restaurarse. | Como referencia se propone el control 8.13 de ISO/IEC 27002:2022, que aborda el mantenimiento y la prueba periódica de copias de respaldo según una política acordada. Se emplea como referencia para el plan, no como prueba de que la empresa haya adoptado la norma. [Referencia oficial de ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) |
+| La copia disponible debe permitir identificar qué información está cubierta y qué diferencias existen frente a los datos que el negocio necesita recuperar. | Criterio propuesto por el equipo. Se contrastarían los datos cubiertos por las copias con los registros del sistema, usando información anonimizada o enmascarada en los papeles de trabajo. |
 
-ISO/IEC 27002:2022 es una norma de controles y orientación para seguridad de la información. El grupo de auditoría de ISO/IEC describe el control 8.13 como el mantenimiento y prueba periódica de respaldos de acuerdo con una política acordada. [Guía del grupo de auditoría ISO/IEC](https://committee.iso.org/files/live/sites/jtc1sc27/files/resources/Journal%202025.pdf)
+ISO/IEC 27002:2022 ofrece orientación sobre controles de seguridad de la información. El control 8.13 se refiere al mantenimiento y las pruebas periódicas de respaldos de acuerdo con una política acordada. [Guía del grupo de auditoría ISO/IEC](https://committee.iso.org/files/live/sites/jtc1sc27/files/resources/Journal%202025.pdf)
 
 ## 5. Programa de trabajo propuesto
 
-Los procedimientos siguientes son una propuesta para una auditoría formal con autorización del negocio. La entrevista serviría para comprender el proceso, pero no sería suficiente por sí sola para demostrar que el respaldo operó correctamente.
+Los procedimientos siguientes son una propuesta para una auditoría formal autorizada por el negocio. La entrevista permitiría entender el proceso, pero sus respuestas se corroborarían con documentos, configuraciones, registros y pruebas técnicas. En este taller no se solicitarán ni examinarán datos reales de clientes.
 
 | ID del riesgo | Control a evaluar | Criterio y fuente | Procedimiento propuesto | Población o muestra | Evidencia esperada | Posibles excepciones |
 |---|---|---|---|---|---|---|
-| R-02 | Definición y ejecución del proceso de respaldo. | Existencia de una forma definida de respaldar y conservar la información; control 8.13 de ISO/IEC 27002:2022, usado como referencia propuesta. Procedimiento interno por solicitar y confirmar. | 1. Entrevistar al responsable actual sobre quién generaba los respaldos, cómo se guardaban y cómo se identificaba la última copia. 2. Solicitar el procedimiento o instrucciones vigentes y determinar si contemplan responsables, ubicación, frecuencia, conservación y pruebas de recuperación. 3. Corroborar lo informado con registros de exportación, configuraciones o metadatos disponibles. | Procedimiento de respaldo aplicable al sistema y registros de respaldos o exportaciones del 12 de mayo al 30 de junio de 2026. Si se informa una única copia, revisar esa copia. No se presupone el tamaño de la población. | Procedimiento vigente, configuración del sistema relacionada con exportaciones, registro de actividad o inventario de respaldos, y metadatos del archivo (fecha, tamaño, formato y ubicación), presentados sin datos personales. | No se localiza un procedimiento; no se identifica a un responsable; el respaldo reportado no se encuentra; o las fechas o características del archivo no concuerdan con lo reportado. |
-| R-02 | Integridad, cobertura y recuperación del respaldo reportado. | El respaldo debe poder recuperarse y cubrir la información que el negocio necesita conservar. Como referencia de control, se propone ISO/IEC 27002:2022, control 8.13, que considera pruebas periódicas de respaldos conforme a una política acordada. | 1. En una auditoría autorizada, obtener una copia de trabajo del respaldo y validar su fecha, formato y legibilidad. 2. Restaurarlo en un entorno de prueba aislado, sin reemplazar el sistema de producción. 3. Comparar la cobertura restaurada con los registros del sistema para el periodo correspondiente. 4. Revisar especialmente los registros comprendidos entre el 27 y el 30 de junio para establecer si están incluidos en la copia reportada del 26 o si existe otra copia posterior. 5. Registrar cualquier diferencia con códigos anonimizados, sin incluir nombres ni direcciones en los papeles de trabajo del curso. | El respaldo reportado del 26 de junio y los registros disponibles entre el 12 de mayo y el 30 de junio. Si la población es pequeña y está disponible, se compararía completa; si no, se elegiría una muestra basada en fechas y riesgo, una vez conocido el volumen real. | Archivo de respaldo en copia de trabajo; registro técnico de la restauración; listado de cobertura por fecha; comparación anonimizada de registros o cantidades; y documentación de excepciones. | El respaldo no puede restaurarse; está incompleto o dañado; no cubre registros que la organización debía conservar; o no hay evidencia suficiente para corroborar la fecha, la cobertura o el resultado de la prueba. |
+| R-02 | Diseño y documentación del proceso de respaldo. | El proceso debe definir responsables, información que se copia, frecuencia, ubicación, conservación, acceso y recuperación. Se solicitará la política interna; según la información disponible, no existe un procedimiento escrito, dato pendiente de corroboración. Como referencia se propone el control 8.13 de ISO/IEC 27002:2022, que trata el mantenimiento y las pruebas periódicas de copias conforme a una política acordada. [Referencia oficial de ISO/IEC 27002:2022](https://www.iso.org/standard/75652.html) | 1. Entrevistar al propietario y al custodio actual del sistema para describir cómo se realizan los respaldos. 2. Solicitar la política, instrucciones o acuerdos vigentes. 3. Revisar si definen responsabilidades, frecuencia, cobertura, capacidad, almacenamiento, conservación, permisos y pruebas de recuperación. 4. Corroborar las respuestas con configuraciones, registros de actividad o evidencia técnica disponible. | Política o instrucciones aplicables al sistema y documentación del proceso de respaldo. Se revisaría todo lo disponible; la cantidad de documentos se determinaría al recibir el inventario. | Política o instrucciones vigentes; descripción de responsabilidades; configuración de respaldos; inventario de medios o ubicaciones; reglas de conservación y acceso; notas de entrevista contrastadas con evidencia. | No existe una definición del proceso; no se asignan responsables; la frecuencia, cobertura o conservación no están definidas; o la entrevista no puede corroborarse con documentos o configuraciones. |
+| R-02 | Ejecución, cobertura y capacidad de los respaldos. | Las copias deben cubrir la información que el negocio necesita conservar y contar con capacidad adecuada para el volumen de datos y su crecimiento previsto. Esta condición es una propuesta del equipo que deberá confirmarse con las necesidades del negocio y con el responsable; no se atribuye como requisito específico del control 8.13. | 1. Obtener el inventario de respaldos o exportaciones y los registros de ejecución. 2. Comparar la información cubierta con los datos que el negocio identifica como necesarios para sus operaciones. 3. Revisar el volumen de información, capacidad disponible, ubicación, conservación y controles de acceso de los medios. 4. Incluir el respaldo reportado como último respaldo y comparar su cobertura con la información que el sistema debía conservar, investigando posibles brechas o datos sin copia. 5. Documentar las diferencias con identificadores anonimizados o datos enmascarados. | Respaldos, exportaciones y registros de ejecución disponibles durante el periodo de uso del sistema. Se revisaría la población completa si su tamaño lo permite; si no, la muestra se definiría después de conocer el inventario y el volumen real. El respaldo reportado como último disponible se incluiría de manera dirigida. | Inventario de copias; registros de ejecución; metadatos de archivos, como fecha, tamaño, formato y ubicación; información de capacidad de almacenamiento; configuración de acceso; y comparación anonimizada de cobertura. | No se localizan copias o registros; la información necesaria no está incluida; la capacidad no es suficiente según las necesidades definidas por el negocio; existen periodos sin respaldo; o no se puede establecer qué información cubre cada copia. |
+| R-02 | Recuperación e integridad de las copias de respaldo. | Las copias deben someterse a pruebas periódicas conforme a una política acordada. Se propone como referencia el control 8.13 de ISO/IEC 27002:2022. La recuperación se evaluaría en un entorno controlado y sin reemplazar el sistema de producción. | 1. Seleccionar una copia de respaldo según el inventario y el riesgo, incluyendo el último respaldo reportado si está disponible. 2. Obtener una copia de trabajo y validar su legibilidad e integridad técnica. 3. Restaurarla en un entorno de prueba aislado, con autorización del negocio. 4. Comparar la información restaurada con los registros que el negocio debe conservar y documentar qué datos pueden recuperarse y cuáles presentan diferencias. 5. Registrar los resultados sin exponer nombres ni direcciones de clientes. | Copias disponibles para el sistema. Si solo se identifica una, se probaría esa copia; si existen varias, la muestra se determinaría después de conocer la población, considerando las más recientes y las que cubran periodos relevantes. | Archivo de respaldo en copia de trabajo; registro de restauración; resultados de validación de integridad y cobertura; comparación anonimizada de registros; y documentación de excepciones. | No se encuentra la copia seleccionada; el archivo no puede leerse o restaurarse; la recuperación está incompleta; los datos presentan diferencias; o no existen resultados previos de pruebas de recuperación. |
+
+**Nota de confidencialidad:** estos procedimientos describen la evidencia que se pediría en una auditoría formal con autorización. Para el taller no se revisarán archivos ni datos reales, y no se presentarán resultados como si las pruebas ya se hubieran realizado.
 
 ### Tratamiento de los registros del 27 al 30 de junio
 
@@ -131,10 +139,11 @@ Estos datos provienen de la descripción del caso y de información comunicada p
 
 ### Limitaciones
 
-- El equipo académico no tiene autorización para ver datos identificables de clientes ni revisar el respaldo real.
-- No se puede confirmar la existencia, integridad, cobertura o recuperabilidad del archivo con el acceso disponible para el taller.
-- No se conoce el nombre del sistema ni quién ingresó la información del 27 al 30 de junio. Esos datos no se incluirán si la empresa no autoriza su divulgación; en una auditoría formal se pedirían a los responsables bajo confidencialidad.
-- La propuesta no contiene hallazgos, porcentajes de cumplimiento ni conclusiones sobre la eficacia de los controles.
+- El equipo académico no cuenta con autorización para consultar datos identificables de clientes ni para examinar el respaldo real. El acceso al sistema es limitado y no permite revisar libremente la información.
+- La existencia, integridad, cobertura, capacidad de almacenamiento y recuperabilidad de los respaldos no pueden comprobarse con el acceso disponible para este taller. El respaldo reportado y el proceso de copias se tratarán como información pendiente de verificación.
+- No se conoce el nombre del sistema ni se divulgarán identidades o datos sobre quién ingresó información, por motivos de confidencialidad. En una auditoría formal, esos datos se solicitarían a los responsables autorizados y se manejarían bajo acuerdos de confidencialidad.
+- El equipo no ejecutará pruebas de restauración ni revisará archivos reales. La evidencia mencionada en el plan es la que se solicitaría en una auditoría formal autorizada; no se presentará como evidencia obtenida.
+- La propuesta no incluye hallazgos, porcentajes de cumplimiento ni conclusiones sobre la eficacia del proceso de respaldos.
 
 ## 8. Conclusión del plan propuesto
 
@@ -144,7 +153,7 @@ La diferencia entre la fecha del respaldo reportado y el último día de uso del
 
 ## Referencia a la matriz vigente
 
-Este plan mantiene la referencia al riesgo **R-02** de la matriz inicial de riesgos de sistemas. La matriz completa debe incluirse como anexo o enlazarse desde el repositorio.
+https://docs.google.com/spreadsheets/d/e/2PACX-1vQmaa1ZyalhYvfVZfbUknuG5T-Lddrlwxbyp_5dcre-hZxf9ZoWnAlknQNlQ_yoqA/pubhtml?gid=1062765412&single=true
 
 ## Fuentes
 
